@@ -5,7 +5,7 @@
   "private": "true",
   "scripts": {
     "deploy": "NODE_ENV=production webpack",
-    "publish": "git checkout gh_pages && git merge master && npm run deploy && git commit -am 'deploy' && git push origin gh-pages && git checkout @{-1}",
+    "publish": "git checkout master && git merge master && npm run deploy && git commit -am 'deploy' && git push origin gh-pages && git checkout @{-1}",
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack -w",
     "build": "webpack",
