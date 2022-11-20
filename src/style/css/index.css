@@ -317,7 +317,7 @@
 }
 
 .main-header__h1::before {
-  content: url("../../../../img/highlight.svg");
+  content: url("/src/img/highlight.svg");
   position: absolute;
   left: 0;
   top: 4vw;
