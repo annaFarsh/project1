@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url("TTLakes/TTLakes-Regular.eot");
+  src: local("TT Lakes Regular"), local("TTLakes-Regular"), url("TTLakes/TTLakes-Regular.eot?#iefix") format("embedded-opentype"), url("TTLakes/TTLakes-Regular.woff") format("woff"), url("TTLakes/TTLakes-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url("TTLakes-Medium.eot");
+  src: local("TT Lakes Medium"), local("TTLakes-Medium"), url("TTLakes/TTLakes-Medium.eot?#iefix") format("embedded-opentype"), url("TTLakes/TTLakes-Medium.woff") format("woff"), url("TTLakes/TTLakes-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: local("TT Lakes Bold"), local("TTLakes-Bold"), url("TTLakes/TTLakes-Bold.eot");
+  src: url("TTLakes/TTLakes-Bold.eot?#iefix") format("embedded-opentype"), url("TTLakes/TTLakes-Bold.woff") format("woff"), url("TTLakes/TTLakes-Bold.ttf") format("truetype");
+}
+
+/*# sourceMappingURL=fonts.css.map */

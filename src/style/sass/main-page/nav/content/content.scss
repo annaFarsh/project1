@@ -1,0 +1,118 @@
+ .content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom:32px;
+
+    @media (min-width: 280px) and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  .content__text {
+    font-family: "TTLakes-Medium";
+    font-size: 0.88rem;
+    padding: 16px;
+    padding-top: 0px;
+    color: #1b1c21;
+    letter-spacing: 0.2px;
+    justify-content: flex-start;
+    line-height: 20px;
+
+    @media (min-width: 1120px) {
+      padding-top: 1.5vw;
+    }
+  }
+  .button--size-screen--big {
+    display: none;
+
+    @media (min-width: 280px) and (max-width: 768px) {
+        display: none; 
+  }
+
+  @media (min-width: 1120px) {
+    display: block;
+  }
+  }
+  .read-more__button::before {
+    content: url("/src/img/icon.svg");
+    position: absolute;
+    left: 4vw;
+    top: -2px;
+
+    @media (min-width: 1120px) {
+      left: 5vw;
+      top: -2px;
+    }
+  }
+  .read-more {
+    position: relative;
+  }
+  .read-more__button {
+    position: relative;
+    font-family: "TT Lakes Medium";
+    font-weight: 500;
+    padding: 0 0 5vw 7.5vw;
+    font-size: 1rem;
+    background-color: #f8f8f8;
+    border-style: none;
+
+    @media (min-width: 280px) and (max-width: 768px) {
+        padding-left: 10vw;
+    }
+  }
+  .content-text__text {
+    font-family: "TT Lakes Regular";
+    max-width: 100%;
+    padding: 0 3.2vw 1.7vw 5vw;
+    font-size: 0.88rem;
+    margin: 0;
+  }
+  .content-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .content-image{
+
+    @media (min-width: 1120px) {
+      padding-top: 1.5vw;
+    }
+  }
+  .content-text__text--size-screen--medium{
+
+    @media (min-width: 280px) and (max-width: 768px) {
+      display: none;
+    }
+
+    @media (min-width: 280px) and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .content__text--size-screen--big{
+
+    @media (min-width: 280px) and (max-width: 768px) {
+      display: none;
+    }
+
+    @media (min-width: 767px) and (max-width: 1119px) { 
+      display: none;
+  }
+}
+.content-image__image{
+
+  @media (min-width: 280px) and (max-width: 768px) {
+    width: 100%;
+  }
+
+  @media (min-width: 767px) and (max-width: 1119px) {
+      max-width: 532px;
+      margin-right: 5vw;
+    }
+
+    @media (min-width: 1120px) {
+      max-width: 532px;
+      margin-right: 5vw;
+    }
+} 

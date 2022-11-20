@@ -1,0 +1,60 @@
+.modal-call__button {
+  margin: 24px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.modal-call {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  top: -1000px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(251, 248, 248, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-y: scroll;
+  padding: 60px 15px;
+}
+
+.modal-call__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 386px;
+  padding: 32px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  -webkit-box-shadow: 0 1px 0 1px #D9FFF5;
+          box-shadow: 0 1px 0 1px #D9FFF5;
+}
+
+.modal--active {
+  position: fixed;
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}

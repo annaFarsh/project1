@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  font-family: "TT Lakes Medium";
+  font-size: 0.88rem;
+  color: #7e7e82;
+  opacity: 72%;
+  background-color: #f6f6f6;
+
+  @media (min-width: 240px) and (max-width: 767px) {
+    flex-direction: column;
+    height: 129px;
+    padding: 40px 5vw 20px 5vw;
+  }
+
+  @media (min-width: 768px) {
+    height: 81px;
+    padding: 0 5vw 20px 5vw;
+  }
+
+  .footer__string {
+    width: auto;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      width: 33.3%;
+    }
+  }
+}

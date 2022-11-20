@@ -1,0 +1,114 @@
+dialog.modal-feedback::-webkit-backdrop {
+  background: #FFFFFF;
+  opacity: 0.96;
+}dialog.modal-feedback::backdrop {
+  background: #FFFFFF;
+  opacity: 0.96;
+}
+
+dialog.modal-feedback {
+  position: absolute;
+  left: 100%;
+  border: 0;
+  min-width: 513px;
+  width: auto;
+  height: 100vh;
+  background-color: #f8f8f8;
+  -webkit-box-shadow: 0px 0px 30px 2px rgb(154, 156, 158);
+          box-shadow: 0px 0px 30px 2px rgb(154, 156, 158);
+}
+
+.modal-feedback__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 440px;
+  border: 0;
+  padding: 32px;
+}
+
+.modal-feedback__close {
+  position: absolute;
+  top: 32px;
+  right: 513px;
+  z-index: 1000;
+}
+
+.modal-input {
+  margin-bottom: 16px;
+  min-width: 376px;
+  width: auto;
+  height: 44px;
+  background-color: white;
+  border-color: #EAEAEA;
+  border-radius: 8px;
+  border-width: 1px;
+}
+
+.modal-input::-webkit-input-placeholder {
+  color: #B5B6BC;
+  font-family: "TT Lakes Medium";
+  font-size: 1rem;
+  padding-left: 16px;
+}
+
+.modal-input::-moz-placeholder {
+  color: #B5B6BC;
+  font-family: "TT Lakes Medium";
+  font-size: 1rem;
+  padding-left: 16px;
+}
+
+.modal-input:-ms-input-placeholder {
+  color: #B5B6BC;
+  font-family: "TT Lakes Medium";
+  font-size: 1rem;
+  padding-left: 16px;
+}
+
+.modal-input::-ms-input-placeholder {
+  color: #B5B6BC;
+  font-family: "TT Lakes Medium";
+  font-size: 1rem;
+  padding-left: 16px;
+}
+
+.modal-input::placeholder {
+  color: #B5B6BC;
+  font-family: "TT Lakes Medium";
+  font-size: 1rem;
+  padding-left: 16px;
+}
+
+.textarea {
+  min-width: 376px;
+  width: auto;
+  height: 118px;
+  padding-top: 16px;
+}
+
+.h2-feedback {
+  font-size: 1.5rem;
+  font-family: "TT Lakes Medium";
+  padding: 40px 0 24px 0;
+}
+
+.modal-text {
+  font-family: "TT Lakes Medium";
+  font-size: 0.88rem;
+}
+
+.modal-text--accent {
+  color: #FF3E79;
+  font-family: "TT Lakes Medium";
+}
+
+.modal-feedback__button {
+  margin: 24px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}

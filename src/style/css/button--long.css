@@ -1,0 +1,35 @@
+.button--long {
+  font-family: "TT Lakes Bold";
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ff3e79;
+  border: none;
+  min-width: 119px;
+  width: auto;
+  height: 32px;
+  border-radius: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.button--long::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-left: 17px;
+}
