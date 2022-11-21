@@ -1,5 +1,5 @@
 import { menuMobileOpen } from "./menuMobileOpen";
-import {Swiper, Pagination } from "../../node_modules/swiper/swiper"
+import {Swiper, Pagination } from "../../node_modules/swiper/vue/swiper"
 import { brandCardsArray } from "./brandCardsArray";
 import { techCardsArray } from "./techCardsArray";
 import { priceCardsArray } from "./priceCardsArray";
