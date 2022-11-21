@@ -12,6 +12,7 @@
 }
 
 .modal-input {
+  margin: 0;
   margin-bottom: 16px;
   padding: 0;
   max-width: 376px;
@@ -70,10 +71,15 @@
 
 .textarea {
   min-width: 376px;
-  width: auto;
+  width: calc(100vw - 64px);
   height: 118px;
   padding-top: 16px;
   background-color: #ffffff;
+}
+@media (min-width: 240px) and (max-width: 767px) {
+  .textarea {
+    min-width: 240px;
+  }
 }
 
 .modal__title {
@@ -119,6 +125,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 666px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
