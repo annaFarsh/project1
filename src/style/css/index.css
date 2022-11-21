@@ -1685,22 +1685,12 @@ th {
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  top: -1000px;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 10;
   background: rgba(251, 248, 248, 0.9);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   min-height: 850px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   overflow-y: scroll;
   padding: 60px 15px;
 }
@@ -1741,6 +1731,7 @@ th {
     top: 0;
     left: 0;
     right: 0;
+    height: 900px;
     width: calc(100vw - 64px);
   }
 }
