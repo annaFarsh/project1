@@ -1,5 +1,5 @@
 @import '../css/normalize.css';
-@import '../../../node_modules/swiper/swiper-bundle.css';
+@import '../../../node_modules/swiper/swiper-bundle.min.css';
 @font-face {
   font-family: "TT Lakes Regular";
   src: local("TT Lakes Regular"), local("TTLakes-Regular");
@@ -1741,7 +1741,6 @@ th {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     width: calc(100vw - 64px);
   }
 }
