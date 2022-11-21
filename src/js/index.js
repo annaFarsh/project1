@@ -1,10 +1,10 @@
 import { menuMobileOpen } from "./menuMobileOpen";
-import {Swiper, Pagination } from "../../node_modules/swiper/vue/swiper"
+import initSwiper from "./initSwiper";
+import {Swiper, Pagination } from "../../node_modules/swiper/swiper"
 import { brandCardsArray } from "./brandCardsArray";
 import { techCardsArray } from "./techCardsArray";
 import { priceCardsArray } from "./priceCardsArray";
 import { Card } from "./classCard";
-import initSwiper from "./initSwiper";
 import hideButtonCheck from "./hideButtonCheck";
 import generationTechCard from "./generationTechCard";
 import renderBrandcards from "./renderBrandCards";
