@@ -1,4 +1,4 @@
-import Swiper, { Pagination } from "swiper";
+import {Swiper,  Pagination } from "../../node_modules/swiper/swiper";
 export default Swiper.use(Pagination);
 new Swiper(".swiper", {
   pagination: {
