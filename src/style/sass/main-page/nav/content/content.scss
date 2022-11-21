@@ -39,6 +39,7 @@
     position: absolute;
     left: 4vw;
     top: -2px;
+    cursor: pointer;
 
     @media (min-width: 1120px) {
       left: 5vw;
@@ -56,6 +57,7 @@
     font-size: 1rem;
     background-color: #f8f8f8;
     border-style: none;
+    cursor: pointer;
 
     @media (min-width: 280px) and (max-width: 768px) {
         padding-left: 10vw;

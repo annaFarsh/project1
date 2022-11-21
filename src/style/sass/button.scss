@@ -5,4 +5,9 @@
     background-color: #ff3e79;
     background-repeat: no-repeat;
     border-radius: 50%;
+    cursor: pointer;
+  }
+  .button:hover{
+transform: scale(1.1);
+transition: 0.3s;
   }

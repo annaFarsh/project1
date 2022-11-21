@@ -14,6 +14,7 @@
     align-self: flex-start;
     justify-content: center;
     position: relative;
+    cursor: pointer;
   }
   .button--long::after {
     content: "";
@@ -24,3 +25,7 @@
     transform: rotate(-45deg);
     margin-left: 17px;
   }
+  .button--long:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+      }
