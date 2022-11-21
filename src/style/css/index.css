@@ -1,5 +1,5 @@
 @import '../css/normalize.css';
-@import '../css/swiper-bundle.css';
+@import 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css';
 @font-face {
   font-family: "TT Lakes Regular";
   src: local("TT Lakes Regular"), local("TTLakes-Regular");
