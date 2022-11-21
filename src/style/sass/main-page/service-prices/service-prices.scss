@@ -1,10 +1,9 @@
-
 table {
   table-layout: fixed;
   width: auto;
   border-collapse: collapse;
   margin: 24px;
-  margin-top:0;
+  margin-top: 0;
   padding-top: 24px;
   font-family: "TT Lakes Regular";
   color: #1b1c21;
@@ -13,7 +12,7 @@ table {
   background-color: #ffffff;
 
   @media (min-width: 240px) and (max-width: 767px) {
-  display:none;
+    display: none;
   }
 }
 
@@ -59,77 +58,80 @@ th {
   color: #7e7e82;
   opacity: 0.72;
 }
-.swiper-slide.price-slider>.section{
+.swiper-slide.price-slider > .section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   font-family: "TT Lakes Regular";
   font-size: 0.88rem;
   text-decoration: none;
-  color:#1B1C21;
+  color: #1b1c21;
   height: 168px;
   width: 260px;
-
 }
-.service-prices{
+.service-prices {
   background-color: #f8f8f8;
 }
-.swiper-slide.price-slider{
+.swiper-slide.price-slider {
   padding-left: 5vw;
   height: 250px;
 }
-.price-item__span{
-color:#7E7E82;
-font-size: 0.88rem;
-font-family: "TT Lakes Medium";
+.price-item__span {
+  color: #7e7e82;
+  font-size: 0.88rem;
+  font-family: "TT Lakes Medium";
 }
-.price-item:last-child{
+.price-item:last-child {
   display: flex;
   flex-direction: row;
   width: 220px;
   justify-content: space-between;
 }
-.price-details__link{
+.price-details__link {
   text-decoration: none;
-  color:#1B1C21;
+  color: #1b1c21;
   font-family: "TT Lakes Regular";
   font-size: 0.88rem;
   max-width: 421px;
   display: flex;
   flex-direction: row;
   padding-left: 5vw;
-
 }
-.price-details{
+.price-details {
   padding: 16px 0;
 }
-.price-details__button{
-  display:flex;
- font-family: "TT Lakes Medium";
- font-size: 1rem;
- color:#1B1C21;
- letter-spacing: -0.2px;
- border: none;
- padding: 0;
- padding-bottom: 47px;
- text-align: left;
-background-color: #f8f8f8;
-cursor: pointer;
+.price-details__button {
+  position: relative;
+  font-family: "TT Lakes Medium";
+  font-size: 1rem;
+  color: #1b1c21;
+  letter-spacing: -0.2px;
+  border: none;
+  padding: 0;
+  padding-bottom: 47px;
+  text-align: left;
+  background-color: #f8f8f8;
+  cursor: pointer;
 
- @media (min-width: 240px) and (max-width: 767px) {
-  width: 192px;
- }
+  @media (min-width: 240px) and (max-width: 767px) {
+    width: 192px;
+  }
 }
 
-.price-details__button:hover{
-transform: scale(1.03);
+.price-details__button::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: solid #ff3e79;
+  border-width: 0 2px 2px 0;
+  transform: rotate(-45deg);
+  background-color: #ffffff;
+  top: 5px;
+  right: -15px;
+
+  @media (min-width: 240px) and (max-width: 767px) {
+    top: 24px;
+    left: 110px;
+  }
 }
-.price-details__pointer{
-  margin-top: 7px;
-  margin-left: 8px;
-  }
-  .price-details__pointer:hover{
-    margin-top: 7px;
-    margin-left: 8px;
-transform: scale(1.4) rotate(-45deg);
-  }

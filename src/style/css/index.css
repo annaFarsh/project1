@@ -1462,7 +1462,7 @@ th {
   font-family: "TT Lakes Regular";
   font-size: 0.88rem;
   text-decoration: none;
-  color: #1B1C21;
+  color: #1b1c21;
   height: 168px;
   width: 260px;
 }
@@ -1477,7 +1477,7 @@ th {
 }
 
 .price-item__span {
-  color: #7E7E82;
+  color: #7e7e82;
   font-size: 0.88rem;
   font-family: "TT Lakes Medium";
 }
@@ -1498,7 +1498,7 @@ th {
 
 .price-details__link {
   text-decoration: none;
-  color: #1B1C21;
+  color: #1b1c21;
   font-family: "TT Lakes Regular";
   font-size: 0.88rem;
   max-width: 421px;
@@ -1517,12 +1517,10 @@ th {
 }
 
 .price-details__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
   font-family: "TT Lakes Medium";
   font-size: 1rem;
-  color: #1B1C21;
+  color: #1b1c21;
   letter-spacing: -0.2px;
   border: none;
   padding: 0;
@@ -1537,21 +1535,24 @@ th {
   }
 }
 
-.price-details__button:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+.price-details__button::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: solid #ff3e79;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: #ffffff;
+  top: 5px;
+  right: -15px;
 }
-
-.price-details__pointer {
-  margin-top: 7px;
-  margin-left: 8px;
-}
-
-.price-details__pointer:hover {
-  margin-top: 7px;
-  margin-left: 8px;
-  -webkit-transform: scale(1.4) rotate(-45deg);
-          transform: scale(1.4) rotate(-45deg);
+@media (min-width: 240px) and (max-width: 767px) {
+  .price-details__button::after {
+    top: 24px;
+    left: 110px;
+  }
 }
 
 .footer {
