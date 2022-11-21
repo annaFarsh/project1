@@ -49,6 +49,16 @@
   -webkit-box-shadow: 0 1px 0 1px #D9FFF5;
           box-shadow: 0 1px 0 1px #D9FFF5;
 }
+@media (min-width: 240px) and (max-width: 767px) {
+  .modal-call__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(100vw - 64px);
+  }
+}
 
 .modal--active {
   position: fixed;
@@ -57,4 +67,17 @@
   opacity: 1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.modal-call__close {
+  position: absolute;
+  top: 32px;
+  left: -65px;
+  z-index: 5;
+}
+@media (min-width: 240px) and (max-width: 767px) {
+  .modal-call__close {
+    top: 24px;
+    left: 16px;
+  }
 }

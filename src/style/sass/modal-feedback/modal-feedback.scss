@@ -86,7 +86,7 @@
 .modal-feedback__content {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   max-width: 386px;
   padding: 32px;
   background: #ffffff;
@@ -99,7 +99,11 @@
 
   @media (min-width: 240px) and (max-width: 767px) {
     position: absolute;
-    width: 100vw;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width: calc(100vw - 64px); 
   }
 }
 .hidden {

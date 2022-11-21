@@ -1,87 +1,71 @@
-dialog.modal-feedback::-webkit-backdrop {
-  background: #FFFFFF;
-  opacity: 0.96;
-}dialog.modal-feedback::backdrop {
-  background: #FFFFFF;
-  opacity: 0.96;
-}
-
-dialog.modal-feedback {
-  position: absolute;
-  left: 100%;
-  border: 0;
-  min-width: 513px;
-  width: auto;
-  height: 100vh;
-  background-color: #f8f8f8;
-  -webkit-box-shadow: 0px 0px 30px 2px rgb(154, 156, 158);
-          box-shadow: 0px 0px 30px 2px rgb(154, 156, 158);
-}
-
-.modal-feedback__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-width: 440px;
-  border: 0;
-  padding: 32px;
-}
-
 .modal-feedback__close {
   position: absolute;
   top: 32px;
-  right: 513px;
-  z-index: 1000;
+  left: -65px;
+  z-index: 5;
+}
+@media (min-width: 240px) and (max-width: 767px) {
+  .modal-feedback__close {
+    top: 24px;
+    left: 16px;
+  }
 }
 
 .modal-input {
   margin-bottom: 16px;
-  min-width: 376px;
+  padding: 0;
+  max-width: 376px;
   width: auto;
   height: 44px;
-  background-color: white;
-  border-color: #EAEAEA;
+  border-color: #eaeaea;
   border-radius: 8px;
   border-width: 1px;
+  background-color: #ffffff;
 }
 
 .modal-input::-webkit-input-placeholder {
-  color: #B5B6BC;
+  color: #b5b6bc;
+  background-color: #eaeaea;
   font-family: "TT Lakes Medium";
   font-size: 1rem;
   padding-left: 16px;
+  background-color: #ffffff;
 }
 
 .modal-input::-moz-placeholder {
-  color: #B5B6BC;
+  color: #b5b6bc;
+  background-color: #eaeaea;
   font-family: "TT Lakes Medium";
   font-size: 1rem;
   padding-left: 16px;
+  background-color: #ffffff;
 }
 
 .modal-input:-ms-input-placeholder {
-  color: #B5B6BC;
+  color: #b5b6bc;
+  background-color: #eaeaea;
   font-family: "TT Lakes Medium";
   font-size: 1rem;
   padding-left: 16px;
+  background-color: #ffffff;
 }
 
 .modal-input::-ms-input-placeholder {
-  color: #B5B6BC;
+  color: #b5b6bc;
+  background-color: #eaeaea;
   font-family: "TT Lakes Medium";
   font-size: 1rem;
   padding-left: 16px;
+  background-color: #ffffff;
 }
 
 .modal-input::placeholder {
-  color: #B5B6BC;
+  color: #b5b6bc;
+  background-color: #eaeaea;
   font-family: "TT Lakes Medium";
   font-size: 1rem;
   padding-left: 16px;
+  background-color: #ffffff;
 }
 
 .textarea {
@@ -89,12 +73,19 @@ dialog.modal-feedback {
   width: auto;
   height: 118px;
   padding-top: 16px;
+  background-color: #ffffff;
 }
 
-.h2-feedback {
+.modal__title {
+  margin: 0;
   font-size: 1.5rem;
   font-family: "TT Lakes Medium";
-  padding: 40px 0 24px 0;
+  padding: 8px 0 24px 0;
+}
+@media (min-width: 240px) and (max-width: 767px) {
+  .modal__title {
+    padding-top: 80px;
+  }
 }
 
 .modal-text {
@@ -103,7 +94,7 @@ dialog.modal-feedback {
 }
 
 .modal-text--accent {
-  color: #FF3E79;
+  color: #ff3e79;
   font-family: "TT Lakes Medium";
 }
 
@@ -111,4 +102,85 @@ dialog.modal-feedback {
   margin: 24px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.modal-feedback {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  top: -1000px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(251, 248, 248, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-y: scroll;
+  padding: 60px 15px;
+}
+
+.modal--active {
+  position: fixed;
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.modal-feedback__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  max-width: 386px;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 3px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  -webkit-box-shadow: 0 1px 0 1px #d9fff5;
+          box-shadow: 0 1px 0 1px #d9fff5;
+}
+@media (min-width: 240px) and (max-width: 767px) {
+  .modal-feedback__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(100vw - 64px);
+  }
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.modal__title::before {
+  content: url("data:image/svg+xml,%3Csvg width='4' height='40' viewBox='0 0 4 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z' fill='%2341F6D7'/%3E%3C/svg%3E");
+  position: absolute;
+  left: 0;
+  top: 4vw;
+}
+@media (min-width: 240px) and (max-width: 767px) {
+  .modal__title::before {
+    top: 96px;
+  }
 }
