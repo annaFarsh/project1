@@ -1,14 +1,17 @@
-.brands-h2 {
+.h2 {
   font-family: "TT Lakes Regular";
   font-size: 1rem;
   color: #7e7e82;
   text-transform: uppercase;
-  padding-top: 16px;
+  padding-top: 18px;
   padding-left: 2.9vw;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
+  border-top: 1px solid #D9FFF5;
+  margin: 0;
+  background: linear-gradient(45deg, #f8f8f8, #ffffff);
 }
 @media (min-width: 240px) and (max-width: 767px) {
-  .brands-h2 {
+  .h2 {
     padding-left: 16px;
   }
 }
@@ -21,6 +24,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #f8f8f8;
 }
 @media (min-width: 1120px) {
   .types-of-brands {
@@ -77,7 +81,6 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   align-self: center;
-  background-color: #f8f8f8;
   gap: 2vw;
   padding-left: 5vw;
   padding-top: 24px;
@@ -135,17 +138,18 @@ img {
   border-style: none;
   position: relative;
   max-width: 160px;
+  background-color: #f8f8f8;
 }
 
 .show-all::before {
-  content: url("img/icon.svg");
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.5001 7.50008L12.0001 10.0001L9.50008 7.50008C9.22393 7.22393 8.77622 7.22393 8.50008 7.50008C8.22393 7.77622 8.22393 8.22393 8.50008 8.50008L11.293 11.293C11.6835 11.6835 12.3167 11.6835 12.7072 11.293L15.5001 8.50008C15.7762 8.22393 15.7762 7.77622 15.5001 7.50008C15.2239 7.22393 14.7762 7.22393 14.5001 7.50008ZM14.5001 13.5001L12.0001 16.0001L9.50008 13.5001C9.22393 13.2239 8.77622 13.2239 8.50008 13.5001C8.22393 13.7762 8.22393 14.2239 8.50008 14.5001L11.293 17.293C11.6835 17.6835 12.3167 17.6835 12.7072 17.293L15.5001 14.5001C15.7762 14.2239 15.7762 13.7762 15.5001 13.5001C15.2239 13.2239 14.7762 13.2239 14.5001 13.5001Z' fill='%2341F6D7'/%3e%3c/svg%3e");
   position: absolute;
   left: 2vw;
   top: 22px;
 }
 
 .hide::before {
-  content: url("img/icon.svg");
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.5001 7.50008L12.0001 10.0001L9.50008 7.50008C9.22393 7.22393 8.77622 7.22393 8.50008 7.50008C8.22393 7.77622 8.22393 8.22393 8.50008 8.50008L11.293 11.293C11.6835 11.6835 12.3167 11.6835 12.7072 11.293L15.5001 8.50008C15.7762 8.22393 15.7762 7.77622 15.5001 7.50008C15.2239 7.22393 14.7762 7.22393 14.5001 7.50008ZM14.5001 13.5001L12.0001 16.0001L9.50008 13.5001C9.22393 13.2239 8.77622 13.2239 8.50008 13.5001C8.22393 13.7762 8.22393 14.2239 8.50008 14.5001L11.293 17.293C11.6835 17.6835 12.3167 17.6835 12.7072 17.293L15.5001 14.5001C15.7762 14.2239 15.7762 13.7762 15.5001 13.5001C15.2239 13.2239 14.7762 13.2239 14.5001 13.5001Z' fill='%2341F6D7'/%3e%3c/svg%3e");
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transition: 0.3s;
@@ -184,4 +188,8 @@ img {
   width: 12px;
   height: 12px;
   background-color: #979797;
+}
+
+.swiper.cards-slider {
+  padding-left: 5vw;
 }
